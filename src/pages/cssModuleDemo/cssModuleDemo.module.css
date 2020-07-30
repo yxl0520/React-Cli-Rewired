@@ -1,0 +1,15 @@
+.css-module {
+  border: 1px dashed lightgreen;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.css-module p {
+  color: lightgreen;
+  font-size: 28px;
+  margin: 0;
+}
+.content {
+  color: lightgreen;
+  font-size: 18px;
+}

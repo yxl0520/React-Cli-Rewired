@@ -1,0 +1,26 @@
+/* 顶层class使用模块化命名 */
+.less-module {
+  // color: lightblue;
+  margin-top: 30px;
+  border: 1px dashed lightsalmon;
+  border-radius: 10px;
+  padding: 10px;
+  // 1. 子级仍然通过（:golbal）使用全局样式
+  :global {
+    .title {
+      color: lightsalmon;
+    }
+    .content {
+      font-size: 18px;
+    }
+  }
+  // 2.子级，不使用(:global)样式，也会被模块化处理
+  .lessStyle {
+    color: red;
+  }
+}
+
+// 3. 没有按照less的嵌套式写法
+.lessStyleNoSub {
+  color: lightpink;
+}
